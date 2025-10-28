@@ -510,3 +510,170 @@ hr {
   background-color: #222;
   margin-top: 30px;
 }
+/* @media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .subscribe {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .subscribe input {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .footer-legal a {
+    margin: 0 8px;
+  }
+}
+@media (max-width:980px){
+      .page{grid-template-columns: 1fr; padding:12px;}
+      aside.filters{position:relative; top:0; order:2}
+      .toolbar{flex-direction:column; align-items:flex-start; gap:8px
+    }
+    }
+
+    
+     */
+
+     /* ---------------- RESPONSIVE DESIGN ---------------- */
+
+/* Tablets and smaller laptops */
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 15px;
+  }
+
+  .container1 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product-grid {
+    gap: 20px;
+  }
+
+  .spotlight-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .navbar {
+    padding: 10px 20px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  /* Navbar */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #000;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+    transition: 0.3s;
+  }
+
+  .mega-menu {
+    position: static;
+    transform: none;
+    width: 100%;
+    flex-wrap: wrap;
+    box-shadow: none;
+    padding: 20px;
+  }
+
+  .menu-column {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+
+  .container1 {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 90%;
+  }
+
+  .spotlight-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-middle {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-subscribe input {
+    width: 80%;
+  }
+}
+
+/* Extra small screens (phones < 480px) */
+@media (max-width: 480px) {
+  .logo span {
+    font-size: 12px;
+  }
+
+  .asus-right span {
+    display: none;
+  }
+
+  .Heading h1 {
+    font-size: 22px;
+  }
+
+  .hot-products .title {
+    font-size: 26px;
+  }
+
+  .product-card p {
+    font-size: 12px;
+  }
+
+  .btn-red {
+    padding: 8px 20px;
+  }
+}

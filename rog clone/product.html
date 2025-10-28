@@ -247,10 +247,26 @@
     <p>©ASUSTEK COMPUTER INC. ALL RIGHTS RESERVED.</p>
   </div>
 </footer>
+<!-- 
+<script>
+        const dots = document.querySelectorAll(".dot");
+        let current = 0;
+        setInterval(() => {
+            if (dots.length === 0) return; 
+            dots[current].classList.remove("active");
+            current = (current + 1) % dots.length;
+            dots[current].classList.add("active");
+        }, 3000);
+    </script> -->
 
-<!-- Font Awesome Icons -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
+    <script>
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+  
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
 
 </body>
 </html>
